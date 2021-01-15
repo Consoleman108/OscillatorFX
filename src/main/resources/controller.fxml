@@ -6,6 +6,7 @@
 <?import javafx.scene.chart.LineChart?>
 
 <?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.CategoryAxis?>
 <VBox spacing="10" stylesheets="style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.consoleman.wavegen.Controller">
 <!-- <VBox spacing="10"  xmlns="http://javafx.com/javafx"  xmlns:fx="http://javafx.com/fxml" fx:controller="com.consoleman.wavegen.Controller">-->
         <MenuBar>
@@ -64,6 +65,17 @@
         <Label fx:id="labelValueVolume" text="0" />
         <Separator />
     </VBox>
-
     <Button fx:id="play" text="Play" onAction="#play"/>
+    <VBox>
+        <LineChart fx:id="lineChart" title="Chart Test" BorderPane.alignment="CENTER">
+            <xAxis>
+                <NumberAxis side="BOTTOM" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis side="LEFT" />
+            </yAxis>
+        </LineChart>
+    </VBox>
+
+    <Button fx:id="Plot" text="Plot" onAction="#plot"/>
 </VBox>

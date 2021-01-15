@@ -6,7 +6,7 @@ public class Waves {
 
     public static short Sin(double cyclePosition, double volume) {
 //        return (short)(Short.MAX_VALUE * Math.sin(2 * Math.PI * cyclePosition));
-        return (short)(volume * Math.sin(2 * Math.PI * cyclePosition));
+        return (short) (volume * Math.sin(2 * Math.PI * cyclePosition));
     }
 
     public static short Triangle(double cyclePosition) {
